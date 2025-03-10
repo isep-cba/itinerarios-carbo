@@ -488,6 +488,7 @@ p, li {font-size: 1.1em;}
   display: table-cell;
   max-width:100%;
   height: auto;
+  max-height: 95vh;
   margin: 0 auto;
   padding: 8px;
   background: #fff;
