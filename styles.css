@@ -87,151 +87,6 @@
 }
 
 
-body {font-family: "alegre";}
-
-.sans-serif {font-family: "alegre"; font-weight: 100;}
-
-
-/* REGLAS CONTENEDORES */
-
-.portada-wrap {
-  overflow: hidden;
-  position: relative;
-}
-
-.portada-bg {
-  opacity: 0.6;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: auto;
-}
-
-.portada-content {
-  position: relative;
-}
-
-div.sticky {
-  position: fixed;
-  z-index: 1;
-  top: 20px;
-  left: 20px;
-}
-
-
-
-.fill { 
-    min-height: 100%;
-    height: 100%;
-}
-
-/* GALERIA DE FOTOS Y THUMBNAILS */
-
-.foto { 
-  width: 100%;
-}
-
-.miniatura { 
-  opacity: 60%;
-  margin: 0.3em;
-  height: 8em;
-}
-
-.miniatura:hover { 
-  opacity: 100%;
-}
-
-
-/* BOTONES FIJOS */
-
-#botongrilla {
-    position: fixed;
-    z-index: 1;
-    bottom: 30px;
-    right: 30px;
-    opacity: 0.6;
-}
-
-#botongrilla img {
-height: 2.5em;
-}
-
-#logoisep {
-  position: fixed;
-  z-index: 1;
-  top: 30px;
-  left: 30px;
-  opacity: 0.7;
-  
-}
-
-#logoisep img {
-height: 3.5em;
-}
-
-
-/* ELEMENTOS MODAL */
-
-.modal-title {
-  color: #4e5c5a;
-  }
-
-
-
-
-
-
-/* MENÚ LATERAL */
-.sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  right: 0;
-  background-color: #4e5c5a; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* ENLACES DEL MENÚ */
-.sidenav a {
-  padding: 18px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 1.2em;
-  color: #f1f1f1;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #ee7a54;
-}
-
-/* Posición y estilo del botón cerrar (esquina superior derecha) */
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 30px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* Estilo página de contenido - si se usa el push a la derecha al abrir */
-#main {
-  transition: margin-left .5s;
-  padding: 0px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-
-
 /* PALETA */
 
 .gris {color: #787878;}
@@ -309,12 +164,122 @@ height: 3.5em;
 
 p, li {font-size: 1.1em;}
 
+
+
+body {font-family: "alegre";}
+
+.sans-serif {font-family: "alegre"; font-weight: 100;}
+
 .parallax {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+/* GALERIA DE FOTOS Y THUMBNAILS */
+
+.foto { 
+  width: 100%;
+}
+
+.miniatura { 
+  opacity: 60%;
+  margin: 0.3em;
+  height: 8em;
+}
+
+.miniatura:hover { 
+  opacity: 100%;
+}
+
+
+/* BOTONES FIJOS */
+
+#botongrilla {
+    position: fixed;
+    z-index: 1;
+    bottom: 30px;
+    right: 30px;
+    opacity: 0.6;
+}
+
+#botongrilla img {
+height: 2.5em;
+}
+
+#logoisep {
+  position: fixed;
+  z-index: 1;
+  top: 30px;
+  left: 30px;
+  opacity: 0.7;
+  
+}
+
+#logoisep img {
+height: 3.5em;
+}
+
+
+/* ELEMENTOS MODAL (solo se usó en ensayo3.html) */
+
+.modal-title {
+  color: #4e5c5a;
+  }
+
+
+/* MENÚ LATERAL */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #4e5c5a; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* ENLACES DEL MENÚ */
+.sidenav a {
+  padding: 18px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #ee7a54;
+}
+
+/* Posición y estilo del botón cerrar (esquina superior derecha) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Estilo página de contenido - si se usa el push a la derecha al abrir */
+#main {
+  transition: margin-left .5s;
+  padding: 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
 
 .card-img-top {opacity:0.85;}
 .card-img-top:hover {opacity:1;}
@@ -430,7 +395,7 @@ p, li {font-size: 1.1em;}
 
 
 
-/* SCROLL SNAP */
+/* SCROLL SNAP desactivado 
 
 .scroll {
   overflow-y: scroll;
@@ -441,6 +406,8 @@ p, li {font-size: 1.1em;}
   scroll-snap-align: start none;
   scroll-margin-block: 10px;
 }
+
+*/
 
 
 /* BARRA DE PROGRESO GENERAL */
